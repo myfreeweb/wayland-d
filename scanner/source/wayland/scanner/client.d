@@ -369,8 +369,8 @@ class ClientInterface : Interface
             sf.writeln();
             sf.writeln("/// Build a %s from a native object.", dName);
             sf.writeln(name == "wl_display" ?
-                "package(wayland) this(wl_display* native)" :
-                "private this(wl_proxy* native)"
+                "this(wl_display* native)" :
+                "this(wl_proxy* native)"
             );
             sf.bracedBlock!({
                 sf.writeln("super(native);");
