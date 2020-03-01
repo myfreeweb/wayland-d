@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 SERVER_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 WL_D_DIR=$SERVER_DIR/..
